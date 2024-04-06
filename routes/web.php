@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::resource('/link', LinkController::class);
+// Route::resource('/link', LinkController::class);
 Route::get('/links', function () {
     return view('layouts.links');
 });
