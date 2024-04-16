@@ -6,6 +6,7 @@
     <!--引入自定義CSS&JS庫-->
     @yield('stylesheet')
     <title>@yield('title')</title>
+    <style>@yield('style')</style>
 </head>
 <body>
     <div class="main">
