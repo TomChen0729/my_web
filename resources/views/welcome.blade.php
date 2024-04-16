@@ -20,7 +20,7 @@
             }
         </style>
     </head>
-    <button><a href="{{ url('/links')}}">你好</a></button>
+    <button><a href="{{ url('/links')}}">不好</a></button>
     <body class="antialiased">
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
             @if (Route::has('login'))
