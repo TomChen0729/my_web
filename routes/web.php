@@ -21,3 +21,43 @@ Route::get('/', function () {
 Route::get('/links', function () {
     return view('layouts.links');
 });
+
+Route::get('/level', function () {
+    return view('pages.level');
+});
+
+Route::get('/start', function () {
+    return view('pages.start');
+});
+
+Route::get('/story', function () {
+    return view('pages.story');
+});
+
+Route::get('/choose', function () {
+    return view('layouts.choose');
+});
+
+Route::get('/choosegame', function () {
+    return view('layouts.choosegame');
+});
+
+Route::get('/chooselevel', function () {
+    return view('layouts.chooselevel');
+});
+
+Route::get('/circle', function () {
+    return view('layouts.circle');
+});
+
+Route::get('/connect', function () {
+    return view('layouts.connect');
+});
+
+Route::get('/debug', function () {
+    return view('layouts.debug');
+});
+
+Route::get('/recom', function () {
+    return view('layouts.recom');
+});
