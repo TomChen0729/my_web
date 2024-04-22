@@ -17,8 +17,9 @@ class CountryController extends Controller
      public function index()
     {
         //
-        
-        return view('xxx.xxx');
+        // 抓目前用戶的遊戲進度跨表查詢
+        // $level = auth()->user()->;
+        return view();
     }
 
     /**
