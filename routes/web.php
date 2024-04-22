@@ -65,8 +65,9 @@ Route::get('/recom', function () {
 // Route::get('/links', function () {
 //     return view('layouts.links');
 // });
-Route::resource('Games', GameController::class);
-Route::get('/country/{countryID}/Game/{GameMetod}', [GameController::class, '']);
+
+
+
 
 Route::middleware([
     'auth:sanctum',
