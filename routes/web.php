@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CountryController;
 use App\Http\Controllers\GameController;
 use App\Http\Controllers\LinkController;
 use Illuminate\Support\Facades\Route;
@@ -65,8 +66,11 @@ Route::get('/recom', function () {
 // Route::get('/links', function () {
 //     return view('layouts.links');
 // });
+Route::resource('countries', CountryController::class);
+Route::get('/', [CountryController::class , 'index'])->name('root');
 Route::resource('Games', GameController::class);
-Route::get('/country/{countryID}/Game/{GameMetod}', [GameController::class, '']);
+
+// Route::get('/country/{countryID}/Game/{GameMetod}', [GameController::class, '']);
 
 Route::middleware([
     'auth:sanctum',
