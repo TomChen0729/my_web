@@ -67,3 +67,13 @@ Route::get('/recom', function () {
 // });
 Route::resource('Games', GameController::class);
 Route::get('/country/{countryID}/Game/{GameMetod}', [GameController::class, '']);
+
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified'
+])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+});

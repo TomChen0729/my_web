@@ -1,8 +1,3 @@
-.content{
-    display: flex;
-    flex-direction: column; /* 垂直排列 */
-}
-.description{
-    flex-direction: column;
-    display: none;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
