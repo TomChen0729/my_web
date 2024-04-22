@@ -11,19 +11,19 @@ class GameService{
     
     
     public function getUserLevel(Request $req, User $user_id){
-        if ($req.method() == 'get'){
-            // 存取遊戲進度
-            $userLevel = auth()->user()->level()->id;
+        // if ($req.method() == 'get'){
+        //     // 存取遊戲進度
+        //     $userLevel = auth()->user()->level()->id;
 
-            if ($userLevel == 0){
-                // 宣告變數並賦值給遊戲畫面的進度參數
+        //     if ($userLevel == 0){
+        //         // 宣告變數並賦值給遊戲畫面的進度參數
                 
-            }
+        //     }
             
-        }
-        else{
-            return response('http status error');                                                                             
-        }
+        // }
+        // else{
+        //     return response('http status error');                                                                             
+        // }
     }
     
 
