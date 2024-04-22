@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class LinkController extends Controller
+class GameController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -46,7 +46,6 @@ class LinkController extends Controller
     public function show($id)
     {
         //
-        // 抓資料出來
     }
 
     /**
