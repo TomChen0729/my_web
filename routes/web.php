@@ -63,6 +63,10 @@ Route::get('/debug', function () {
 Route::get('/recom', function () {
     return view('layouts.recom');
 });
+
+Route::get('/game', function () {
+    return view('layouts.game');
+});
 // Route::get('/links', function () {
 //     return view('layouts.links');
 // });
